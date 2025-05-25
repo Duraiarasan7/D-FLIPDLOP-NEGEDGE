@@ -1,16 +1,19 @@
-# D-FLIPDLOP-NEGEDGE
+EXP-8 D-FLIPDLOP-NEGEDGE
+### name :DURAIARASAN
+### REG:212224230071
 
-**AIM:**
+
+*AIM:*
 
 To implement  D flipflop using verilog and validating their functionality using their functional tables
 
-**SOFTWARE REQUIRED:**
+*SOFTWARE REQUIRED:*
 
 Quartus prime
 
-**THEORY**
+*THEORY:*
 
-**D Flip-Flop**
+*D FLIPFLOP*
 
 D flip-flop operates with only positive clock transitions or negative clock transitions. Whereas, D latch operates with enable signal. That means, the output of D flip-flop is insensitive to the changes in the input, D except for active transition of the clock signal. The circuit diagram of D flip-flop is shown in the following figure.
 
@@ -26,7 +29,8 @@ Therefore, D flip-flop always Hold the information, which is available on data i
 
 Next state of D flip-flop is always equal to data input, D for every positive transition of the clock signal. Hence, D flip-flops can be used in registers, shift registers and some of the counters.
 
-**Procedure**
+*PROCEDURE:*
+
 1.Type the program in Quartus software.
 
 2.Compile and run the program.
@@ -35,32 +39,32 @@ Next state of D flip-flop is always equal to data input, D for every positive tr
 
 4.Create nodes for inputs and outputs to generate the timing diagram.
 
-5.For different input combinations generate the timing diagram
+5.For different input combinations generate the timing diagram.
 
 
-**PROGRAM**
-```
-module exp8(D,clk,Q,Qbar);
-input D,clk;
-output reg Q;
-output reg Qbar;
-initial Q=0;
-initial Qbar=1;
-always @(posedge clk)
-begin
-Q=D;
-Qbar=~D;
-end
-endmodule
-```
-
-**RTL LOGIC FOR FLIPFLOPS**
-![Screenshot 2025-04-22 113255](https://github.com/user-attachments/assets/6e19723b-0be9-4df2-a6e1-19552add9271)
 
 
-**TIMING DIGRAMS FOR FLIP FLOPS**
-![Screenshot 2025-04-22 113513](https://github.com/user-attachments/assets/f01132b6-6005-4bab-945e-79d504d2fb75)
+*PROGRAM:*
 
 
-**RESULTS**
-Thus the D flipflop using verilog and validating their functionality using their functional tables is verified.
+![8](https://github.com/user-attachments/assets/f03b13d0-0462-4bc7-bcb5-e103f3ed52bf)
+
+
+
+*RTL LOGIC FOR FLIPFLOPS:*
+
+
+
+![Screenshot 2024-12-26 150723](https://github.com/user-attachments/assets/3a4a1f90-770d-43b4-8e69-5f98bea05d49)
+
+
+
+*TIMING DIGRAMS FOR FLIP FLOPS:*
+
+
+![Screenshot 2024-12-26 150738](https://github.com/user-attachments/assets/2eb18a8a-c8ee-43e5-9006-cf85347c0e7b)
+
+
+*RESULT:*
+
+Sucessfully implemented Encoder 8 To 3 in Dataflow Modelling using verilog and validated their functionality using their functional table.
